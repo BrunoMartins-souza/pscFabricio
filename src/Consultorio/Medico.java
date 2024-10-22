@@ -48,11 +48,12 @@ public class Medico {
 	  
 	  public static void mostrarMedico(){
 	    
-	    System.out.print("\n\n\nMÉDICOS CADASTRADOS: ");
+	    System.out.print("\nMÉDICOS CADASTRADOS: ");
 	    System.out.print(listaMedicos.size()); 
 	    System.out.println();
 	    
-	    System.out.println("Nome Medico \t CRM \t Especialidade \t Telefone \t Periodo De Atendimento");
+	    Medico[] cabecalho = {"idMedico", "Nome", "CRM", "Especialidade", "Telefone", "Periodo de Atendimento"};
+	    listaMedico.add(cabecalho);
 	    for(int i = 0; i < listaMedicos.size(); i++){
 	      System.out.println(listaMedicos.get(i).nomeMedico + "\t\t" + listaMedicos.get(i).crm + "\t" + listaMedicos.get(i).especialidade);
 	    }
