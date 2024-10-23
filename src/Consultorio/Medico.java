@@ -52,13 +52,13 @@ public class Medico {
 	    System.out.print(listaMedicos.size()); 
 	    System.out.println();
 	    
-	    Medico[] cabecalho = {"idMedico", "Nome", "CRM", "Especialidade", "Telefone", "Periodo de Atendimento"};
-	    listaMedico.add(cabecalho);
-	    /*for(int i = 0; i < listaMedicos.size(); i++){
+	    /*Medico[] cabecalho = {"idMedico", "Nome", "CRM", "Especialidade", "Telefone", "Periodo de Atendimento"};
+	    listaMedico.add(cabecalho);*/
+	    for(int i = 0; i < listaMedicos.size(); i++){
 	      System.out.println(listaMedicos.get(i).nomeMedico + "\t\t" + listaMedicos.get(i).crm + "\t" + listaMedicos.get(i).especialidade);
-	    */
-	    for(Medico[] novoMedico : listaMedico) {
-	    	System.out.printf("%-15s %10s %15s %n", listaMedico[0], listaMedico[1], listaMedico[2]);
+	    
+	    /*for(Medico[] novoMedico : listaMedico) {
+	    	System.out.printf("%-15s %10s %15s %n", listaMedico[0], listaMedico[1], listaMedico[2]);*/
 	    }
 	    
 	    System.out.println("\n\n\n");
